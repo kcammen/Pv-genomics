@@ -59,5 +59,3 @@ rm *_1.fq.gz
 rm *_2.fq.gz
 rm *.png
 rm id.txt
-
-done
