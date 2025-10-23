@@ -3,9 +3,9 @@
 module load samtools
 module load bedtools
 
-INDIR=/path_to_mapped_reads/
+INDIR=/path_to_project/mapped_bams/
 OUTDIR=${INDIR}
-BED=/path_to_ref/Phoca_vitulina_RepeatMasker_regions.bed
+BED=/path_to_project/ref/Phoca_vitulina_RepeatMasker_regions.bed
 
 P_vitulina_ids=$(cat HarborSeal_sampleIDs.txt)
 
