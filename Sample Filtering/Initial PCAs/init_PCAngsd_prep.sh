@@ -3,7 +3,7 @@
 module load angsd
 
 bamlist=/path_to_project/init_pcangsd/Pv.bam.list.noNovoGene.txt
-chrs=/path_to_ref/GSC_HSeal_1.0_HiC.autosomes.txt
+chrs=/path_to_project/ref/GSC_HSeal_1.0_HiC.autosomes.txt
 out=/path_to_project/init_pcangsd/Pv.mapQ30.autosomes
 
 #minInd: 204 x 75% = 153
