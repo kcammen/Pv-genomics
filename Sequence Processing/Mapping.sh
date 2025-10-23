@@ -28,7 +28,7 @@ module load bwa
 module load samtools 
 
 #set genome ref file
-nuref=/path_to_ref/GSC_HSeal_1.0_HiC.fasta
+nuref=/path_to_project/ref/GSC_HSeal_1.0_HiC.fasta
 
 #align to the reference genome
 bwa mem -t 40 ${nuref} ${outdir}${dir}/${id}fastp.1.fq.gz ${outdir}${dir}/${id}fastp.2.fq.gz > ${outdir}${dir}/${id}nuDNA_aligned.sam
