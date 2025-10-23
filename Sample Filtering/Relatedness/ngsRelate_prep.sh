@@ -13,3 +13,5 @@ angsd sites index ${keep_sites}
 
 #minInd: 183 x 75% = 137
 angsd -GL 2 -rf ${chrs} -P 10 -doGlf 3 -doMaf 1 -minMaf 0.05 -doMajorMinor 1 -minInd 137 -bam ${bamlist} -sites ${keep_sites} -uniqueonly 1 -remove_bads 1 -only_proper_pairs 1 -skipTriallelic 1 -minmapq 30 -minq 30 -SNP_pval 1e-6 -out ${out}
+
+zcat ${out}.mafs.gz | cut -f5 | sed 1d > ${out}.freqs.txt
