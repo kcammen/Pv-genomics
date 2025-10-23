@@ -8,9 +8,7 @@ Steps:
 
 2. Combine global depth distribution across chromosomes: run `combineDepths.R`
 
-3. Plot global depth distribution and filter thresholds (based on median global depth): run `plotDepths.R`
+3. Make bed files with regions to remove based on min and max depth thresholds: run `doDepthFilter.sh` to call `doDepthFilter.py`
 
-4. Make bed files with regions to remove based on min and max depth thresholds: run `doDepthFilter.sh` to call `doDepthFilter.py`
-
-5. Combine the two groups (low cov and high cov) and produce final bed file with sites to keep after depth filtering: run `combineFilters.sh`
+4. Combine the two groups (low cov and high cov) and produce final bed file with sites to keep after depth filtering: run `combineFilters.sh`
  
