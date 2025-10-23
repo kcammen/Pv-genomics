@@ -3,7 +3,7 @@
 module load angsd
 
 bamlist=/path_to_project/related/Pv.bam.list.noNovoGene.nomisID.noThyout.txt
-chrs=/path_to_ref/GSC_HSeal_1.0_HiC.autosomes.txt
+chrs=/path_to_project/ref/GSC_HSeal_1.0_HiC.autosomes.txt
 out=/path_to_project/related/Pv.nomisID.noThy.mapQ30.autosomes
 keep_bed=/path_to_project/excess_het/results/keep_depth_het.BED
 keep_sites=/path_to_project/related/keep_depth_het_loci.txt
