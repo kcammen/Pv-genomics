@@ -1,7 +1,7 @@
 #!/bin/bash
 
-rawdir=/path_to_rawdata/
-outdir=/path_to_mapped_reads/
+rawdir=/path_to_project/rawdata/
+outdir=/path_to_project/mapped_bams/
 
 P_vitulina_ids=$(cat HarborSeal_sampleIDs.txt)
 
