@@ -23,7 +23,7 @@ Scripts are provided in individual folders for (numbered in sequential order of 
    b) Merging and further filtering genotypes  
 
 6. _Evaluating Population Structure_  
-   a) Visualizing population structure using PCA  
+   a) Visualizing population structure using PCA and pairwise Fst  
    b) Evaluating admixture  
 
 7. _Evaluating Evolutionary History_  
