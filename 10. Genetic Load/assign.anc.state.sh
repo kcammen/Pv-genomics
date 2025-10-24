@@ -8,7 +8,8 @@ module load java-jdk/8.0.112
 
 zgrep -v "^##" snpEff/high_impact.vcf.gz | cut -f 1,2,4,5 | gzip > snpEff/high_impact_snps.tsv.gz
 
-Rscript ancient_alleles_assignment.R > r_ancestral_ref_proposal.log 2>&1
+#I ran the R script on my local computer because of package issues on the computing cluster.
+#Rscript ancient_alleles_assignment.R > r_ancestral_ref_proposal.log 2>&1
 
 bgzip anc_allele_assignment.bed
 tabix -s 1 -b 2 -e 3 anc_allele_assignment.bed.gz
