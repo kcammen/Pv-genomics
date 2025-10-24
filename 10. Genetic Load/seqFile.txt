@@ -1,0 +1,6 @@
+(((Phoca_vitulina:0.0008,Phoca_largha:0.0006):0.0027,Halichoerus_grypus:0.0013):0.088,Martes_foina:0);
+
+Phoca_vitulina /projects/mortentange/people/ngz409/mutational_load/cactus_align/genomes/GSC_HSeal_1.0_HiC.softmasked.fa.gz
+Phoca_largha /projects/mortentange/people/ngz409/mutational_load/cactus_align/genomes/Phoca_largha_HiC.softmasked.fa.gz
+Halichoerus_grypus /projects/mortentange/people/ngz409/mutational_load/cactus_align/genomes/Halichoerus_grypus_HiC.softmasked.fa.gz
+Martes_foina /projects/mortentange/people/ngz409/mutational_load/cactus_align/genomes/mfoi.min_150.pseudohap2.1_HiC.softmasked.fa.gz
