@@ -1,7 +1,7 @@
+# Sample Filtering - Relatedness
+Identify duplicate and related individuals using ngsRelate: https://github.com/ANGSD/NgsRelate/blob/master/README.md. 
 
-# Identify duplicate and related individuals using ngsRelate: https://github.com/ANGSD/NgsRelate/blob/master/README.md. 
-
-# Steps:
+## Steps:
 
 1. Generate a file with allele frequencies (.mafs.gz) and a file with genotype likelihoods (.glf.gz); Extract the frequency column from the allele frequency file and remove the header (to make it in the format NgsRelate needs): `ngsRelate_prep.sh`
 
