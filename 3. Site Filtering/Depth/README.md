@@ -1,8 +1,8 @@
-# remove outlier regions regarding depth across all samples (too low or too high).
-
+# Site Filtering - Depth
+Remove outlier regions regarding depth across all samples (too low or too high).  
 Modified from https://github.com/GenisGE/impalascripts/tree/master/qc/sites_qc/impala_map/depth and https://github.com/GenisGE/warthogscripts/tree/main/analyses/qc/sites_qc/depth
 
-Steps:
+## Steps:
 
 1. Get depth for each site, separately for low depth and high depth samples, in parallel across chromosomes: run `getDepthsLowHighDepthSamples.sh`
 
