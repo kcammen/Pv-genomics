@@ -1,4 +1,7 @@
-# filter to remove regions with extreme excess of heterozygosity, usually caused by mapping errors due to paralogs regions. Steps:
+# Site Filtering - Heterozygosity
+Filter to remove regions with extreme excess of heterozygosity, usually caused by mapping errors due to paralogs regions. Note this filtering was completed after filtering for depth. 
+
+## Steps:
 
 1. Make beagle file from all the genome: `makeBeagleRaw.sh`
 
