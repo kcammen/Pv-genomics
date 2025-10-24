@@ -1,7 +1,7 @@
+# Genotype Calling - Individual
+Perform genotype calling and further filtering, restricted to genomic regions retained after previous site filtering. 
 
-# Perform genotype calling and further filtering, restricted to genomic regions retained after previous site filtering. 
-
-# Steps:
+## Steps:
 
 1. Perform genotype calling individually for each BAM file, restricted to genomic regions retained after site filtering and reads with mapping quality scores of at least 30 and bases with quality scores of 30, and index genotype files: `genotype.calling.sh`
 
