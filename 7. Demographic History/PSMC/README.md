@@ -1,6 +1,6 @@
 
 # Demographic History - PSMC
-Run PSMC to evaluate historical demography (Ne) of each population using 1 high-coverage diploid conensus genome sequence per population. 
+Run PSMC to evaluate historical demography (Ne) of each population using 1-4 high-coverage diploid conensus genome sequences per population. 
 
 ## Steps:
 
