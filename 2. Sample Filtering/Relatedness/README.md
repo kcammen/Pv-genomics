@@ -1,5 +1,6 @@
 # Sample Filtering - Relatedness
 Identify duplicate and related individuals using ngsRelate: https://github.com/ANGSD/NgsRelate/blob/master/README.md. 
+Note that this step is completed after site filtering. 
 
 ## Steps:
 
