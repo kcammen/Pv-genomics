@@ -9,4 +9,6 @@ To infer historical population splits using TREEMIX. Adapted from: https://speci
 
 3. Create pop file and convert vcf file to TreeMix format: `vcftotreemix.sh` 
 
-4. Run TreeMix: `TreeMix.sh` and visualize results in R
+4. Run TreeMix: `TreeMix.sh`
+
+5. Visualize results in R using `plotting_funcs2.R`
