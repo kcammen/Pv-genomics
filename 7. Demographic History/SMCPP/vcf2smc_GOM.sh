@@ -6,7 +6,7 @@ inputvcf=/path_to_project/genotype_merge/final_merged_depthmask2_bialleleSNPsonl
 maskfile=/path_to_project/ref/GSC_HSeal_1.0_HiC.repeatmasker.autosomes.sorted.merged.bed.gz
 chrs=/path_to_project/ref/GSC_HSeal_1.0_HiC.autosomes.txt
 
-#To get list of original sample names: bcftools query -l /projects/mortentange/people/ngz409/genotype_merge/final_merged_depthmask2_bialleleSNPsonly_maf05_renamed_w16.vcf.gz
+#To get list of original sample names: bcftools query -l /path_to_project/genotype_merge/final_merged_depthmask2_bialleleSNPsonly_maf05_renamed_w16.vcf.gz
 #Set distinguished lineage as highest coverage individual from that population
 
 cat ${chrs} | while read chr
