@@ -1,7 +1,7 @@
 # Pv-genomics
-Analysis code for Cammen et al. (2026)
+Analysis code for Cammen et al. (in review)
 
-This repository contains scripts for the analyses of whole genome sequencing data from harbor seals sampled across the North Atlantic, presented in _Range expansion reduces immunogenomic diversity in a widely distributed pinniped species_ by Cammen et al. (2016). DOI to published paper will be added here. Associated raw sequence data will be deposited in the European Nucleotide Archive (Project ###) and the NCBI Short-Read Archive (Project ####) following acceptance of the manuscript. 
+This repository contains scripts for the analyses of whole genome sequencing data from harbor seals sampled across the North Atlantic, presented in _Range expansion reduces immunogenomic diversity in a widely distributed pinniped species_ by Cammen et al. (in review). DOI to published paper will be added here. Associated raw sequence data will be deposited in the European Nucleotide Archive (Project ###) and the NCBI Short-Read Archive (Project ####) following acceptance of the manuscript. 
 
 Scripts are provided in individual folders for (numbered in sequential order of implementation):
 
