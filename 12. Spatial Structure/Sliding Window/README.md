@@ -1,8 +1,7 @@
 
-# Genetic Differentiation - Sliding Window 
-Calculate pairwise Fst in sliding windows across the genome to identify outlier regions potentially indicative of differential selection (local adaptation) occuring between populations. 
-Modified from: https://github.com/popgenDK/seqAfrica_wildebeest/blob/main/Fst_scan/window_Fsthudson.v3.py
+# Windowed PCA 
+Conducted windowed PCA to test for genomic windows with elevated spatial structure. 
 
 ## Steps:
 
-1. From merged and filtered genotype files, calculate Hudson's pairwise Fst in sliding windows across the genome for every possible population pair: `window_Fsthudson.sh`
+1. From merged and filtered genotype files, conduct windowed PCA within 100 kb non-overlapping windows with at least 20 SNPs: `winPCA.sh`
