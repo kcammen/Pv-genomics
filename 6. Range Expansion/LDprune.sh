@@ -3,7 +3,7 @@
 module load plink/1.9.0
 module load perl/5.38.0 vcftools/0.1.16  
 
-filteredvcf=/projects/mortentange/people/ngz409/treeMix/California/final_merged_depthmask2_bialleleSNPsonly_maf05_California_renamed_miss05_miss01.vcf.gz
+filteredvcf=/pathtoproject/treeMix/California/final_merged_depthmask2_bialleleSNPsonly_maf05_California_renamed_miss05_miss01.vcf.gz
 
 plink --vcf /projects/mortentange/people/ngz409/treeMix/California/final_merged_depthmask2_bialleleSNPsonly_maf05_California_renamed_miss05_miss01.vcf.gz --double-id --allow-extra-chr \
 --set-missing-var-ids @:# \
