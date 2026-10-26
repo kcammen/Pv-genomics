@@ -1,24 +1,13 @@
 #!/bin/bash
-#SBATCH --partition=cpuqueue 
-#SBATCH --qos=normal
-#SBATCH -J extract_bam_reads 
-#SBATCH -o extract_bam_reads.log.out
-#SBATCH -e extract_bam_reads.error      
-#SBATCH --mail-user=kristina.cammen@sund.ku.dk
-#SBATCH --mail-type=ALL 
-#SBATCH -t 18:00:00				
-#SBATCH --ntasks=1                  
-#SBATCH --cpus-per-task=16          
-#SBATCH --mem=40gb
-############################################
+
 module load samtools/1.23.1
 module load bwa/0.7.18  
 
-outdir=/projects/mortentange/people/ngz409/mitogenome/bam_extract
-bamlist=/projects/mortentange/people/ngz409/mitogenome/Pv.bam.orig.list.noNovoGene.nomisID.noThyout.norel2.txt
-mitoref=/projects/mortentange/people/ngz409/mitogenome/Pvmitogenome.fasta
+outdir=/pathtoproject/mitogenome/bam_extract
+bamlist=/pathtoproject/mitogenome/Pv.bam.orig.list.noNovoGene.nomisID.noThyout.norel2.txt
+mitoref=/pathtoproject/mitogenome/Pvmitogenome.fasta
 
-#bwa index ${mitoref}
+bwa index ${mitoref}
 
 cat ${bamlist} | while read file
 do
