@@ -1,16 +1,5 @@
 #!/bin/bash
-#SBATCH --partition=cpuqueue 
-#SBATCH --qos=normal
-#SBATCH -J LDprune 
-#SBATCH -o LDprune.log.out
-#SBATCH -e LDprune.error      
-#SBATCH --mail-user=kristina.cammen@sund.ku.dk
-#SBATCH --mail-type=ALL 
-#SBATCH -t 2:00:00				
-#SBATCH --ntasks=1                  
-#SBATCH --cpus-per-task=8           
-#SBATCH --mem=8gb
-############################################
+
 module load plink/1.9.0
 module load perl/5.38.0 vcftools/0.1.16  
 
