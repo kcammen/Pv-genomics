@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH --partition=cpuqueue 
+#SBATCH --qos=normal
+#SBATCH -J LDprune 
+#SBATCH -o LDprune.log.out
+#SBATCH -e LDprune.error      
+#SBATCH --mail-user=kristina.cammen@sund.ku.dk
+#SBATCH --mail-type=ALL 
+#SBATCH -t 2:00:00				
+#SBATCH --ntasks=1                  
+#SBATCH --cpus-per-task=8           
+#SBATCH --mem=8gb
+############################################
+module load plink/1.9.0
+module load perl/5.38.0 vcftools/0.1.16  
+
+filteredvcf=/projects/mortentange/people/ngz409/treeMix/California/final_merged_depthmask2_bialleleSNPsonly_maf05_California_renamed_miss05_miss01.vcf.gz
+
+plink --vcf /projects/mortentange/people/ngz409/treeMix/California/final_merged_depthmask2_bialleleSNPsonly_maf05_California_renamed_miss05_miss01.vcf.gz --double-id --allow-extra-chr \
+--set-missing-var-ids @:# \
+--indep-pairwise 100 10 0.1 --out final_merged_depthmask2_bialleleSNPsonly_maf05_California_renamed_miss05_miss01noLD
+#Pruning complete.  405148 of 417270 variants removed: 12,122 retained
+
+#Replace : with tab in the pruned position list
+sed -i 's/:/\t/g' final_merged_depthmask2_bialleleSNPsonly_maf05_California_renamed_miss05_miss01noLD.prune.in
+
+#Filter the vcf file to include only pruned non-LD SNPs
+vcftools --gzvcf /projects/mortentange/people/ngz409/treeMix/California/final_merged_depthmask2_bialleleSNPsonly_maf05_California_renamed_miss05_miss01.vcf.gz --positions final_merged_depthmask2_bialleleSNPsonly_maf05_California_renamed_miss05_miss01noLD.prune.in --stdout --recode | gzip > final_merged_depthmask2_bialleleSNPsonly_maf05_California_renamed_miss05_miss01.LDpruned.vcf.gz
