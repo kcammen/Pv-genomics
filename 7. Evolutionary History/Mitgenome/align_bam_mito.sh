@@ -34,3 +34,24 @@ do
     samtools index ${outdir}/${sample}_singletons_mtDNA_aligned_sorted.bam
 
 done
+
+cat ${bamlist} | while read file
+do
+
+    sample=$(echo ${file} | cut -d '/' -f6 | cut -f1 -d "." | cut -f1 -d "_")
+
+    echo "Processing file: ${file}"
+    echo "Aligning to reference mitogenome: ${sample}"
+
+    #merge paired end alignment and singletons alignment
+    #convert to bam file and sort
+    samtools merge -@ 8 \
+    ${sample}_mtDNA_aligned_with_singletons.bam \
+    ${sample}_mtDNA_aligned_sorted.bam \
+    ${sample}_singletons_mtDNA_aligned_sorted.bam
+     
+    #not recommended to remove duplicates from mtDNA alignment
+
+    samtools index ${outdir}/${sample}_mtDNA_aligned_with_singletons.bam
+
+done
