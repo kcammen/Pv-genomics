@@ -50,9 +50,8 @@ Scripts are provided in individual folders for (numbered in sequential order of 
 11. _Evaluating Genetic Load_  
     a) Approximating individual-level genetic loads
 
-12. _Evaluating Genetic Differentiation_  
-    a) Calculating Fst across the genome and within subsets of genic regions  
-    b) Calculating sliding-window heterozygosity across the genome and identifying outlier regions of elevated differentiation
+12. _Evaluating Spatial Structure in Sliding Windows_  
+    a) Conducting windowed PCA across the genome to identify outlier regions of elevated spatial structure
 
 Note that scripts were run individually in sequence, but could be combined into pipelines using [snakemake](https://snakemake.github.io/). 
 
