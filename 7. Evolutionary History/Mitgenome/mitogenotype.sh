@@ -1,21 +1,10 @@
 #!/bin/bash
-#SBATCH --partition=cpuqueue 
-#SBATCH --qos=normal
-#SBATCH -J mitogenotype_v2
-#SBATCH -o mitogenotype_v2.log.out
-#SBATCH -e mitogenotype_v2.error      
-#SBATCH --mail-user=kristina.cammen@sund.ku.dk
-#SBATCH --mail-type=ALL 
-#SBATCH -t 4:00:00				
-#SBATCH --ntasks=1                  
-#SBATCH --cpus-per-task=8          
-#SBATCH --mem=8gb
-############################################
+
 module load perl/5.38.0 gsl/2.5 bcftools/1.21
 
-outdir=/projects/mortentange/people/ngz409/mitogenome/bam_extract
-bamlist=/projects/mortentange/people/ngz409/mitogenome/Pv.bam.orig.list.noNovoGene.nomisID.noThyout.norel_part2.txt
-mitoref=/projects/mortentange/people/ngz409/mitogenome/Pvmitogenome.fasta
+outdir=/pathtoproject/mitogenome/bam_extract
+bamlist=/pathtoproject/mitogenome/Pv.bam.orig.list.noNovoGene.nomisID.noThyout.norel_part2.txt
+mitoref=/pathtoproject/mitogenome/Pvmitogenome.fasta
 
 cat ${bamlist} | while read file
 do
