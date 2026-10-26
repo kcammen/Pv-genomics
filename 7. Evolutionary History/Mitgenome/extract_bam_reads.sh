@@ -21,13 +21,13 @@ do
     #save R1 paired reads
     #save R2 paired reads
     #delete reads flagged as neither R1 or R2, or flagged as both
-    #delete singletons
+    #save singletons
     #leave read names as they are
     samtools fastq \
         -1 ${sample}_R1.fastq.gz \
         -2 ${sample}_R2.fastq.gz \
         -0 /dev/null \
-        -s /dev/null \
+        -s ${sample}_singletons.fastq.gz \
         -n \
         "${file}"
 
