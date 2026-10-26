@@ -1,4 +1,4 @@
-# To build a mitogenome tree
+# To estimate a maximum-likelihood phylogenetic tree based on mitogenome sequences
 
 # Steps:
 
