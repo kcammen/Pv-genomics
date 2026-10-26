@@ -9,7 +9,7 @@ chrs=/pathtoproject/nucDiv/GSC_HSeal_1.0_HiC.autosomes.txt
 
 cat ${chrs} | while read chr
 do
-    echo bcftools view -Oz -o merged_depthmask2_${chr}.vcf.gz /projects/mortentange/people/ngz409/genotype_merge/merged_depthmask2_${chr}.bcf.gz --threads 8
+    echo bcftools view -Oz -o merged_depthmask2_${chr}.vcf.gz /pathtoproject/genotype_merge/merged_depthmask2_${chr}.bcf.gz --threads 8
 done | xargs -L 1 -I CMD -P 5 bash -c CMD
 
 cat ${chrs} | while read chr
