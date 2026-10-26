@@ -1,23 +1,11 @@
 #!/bin/bash
-#SBATCH --partition=cpuqueue 
-#SBATCH --qos=normal
-#SBATCH -J nucDiv_parallel
-#SBATCH -o nucDiv_parallel.log.out
-#SBATCH -e nucDiv_parallel.error      
-#SBATCH --mail-user=kristina.cammen@sund.ku.dk
-#SBATCH --mail-type=ALL 
-#SBATCH -t 24:00:00				
-#SBATCH --ntasks=1                  
-#SBATCH --cpus-per-task=40
-#SBATCH --mem=10gb
-############################################
+
 module load perl/5.38.0 gsl/2.5 bcftools/1.21
 module load tabix/1.11 
 module load pixy/1.2.11.beta1
 
-popfile=/projects/mortentange/people/ngz409/nucDiv/popfile.tsv
-windowbedfile=/projects/mortentange/people/ngz409/heterozygosity_window/slidingwindows.100kb.100kb.bed
-chrs=/projects/mortentange/people/ngz409/nucDiv/GSC_HSeal_1.0_HiC.autosomes.txt
+popfile=/pathtoproject/nucDiv/popfile.tsv
+chrs=/pathtoproject/nucDiv/GSC_HSeal_1.0_HiC.autosomes.txt
 
 cat ${chrs} | while read chr
 do
